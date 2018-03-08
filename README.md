@@ -32,8 +32,10 @@ module.exports = {
 };
 ```
 
-Add the following to `layout.html` that all of your pages extend, or to `outerLayout.html` if you have one in `apostrophe-templates/views/`.
+Add the following include to your `<head></head>` in `layout.html` that all of your pages extend, or to `outerLayout.html` if you have one in `apostrophe-templates/views/`. This will output the meta tags needed for Facebook Open Graph.
 
 ```nunjucks
-{% include "apostrophe-open-graph:view.html" %}
+{% block extraHead %}
+  {% include "apostrophe-open-graph:view.html" %}
+{% endblock %}
 ```
