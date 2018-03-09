@@ -1,0 +1,34 @@
+{
+  "name": "apostrophe-open-graph",
+  "version": "1.0.0",
+  "description": "Facebook's Open Graph for ApostropheCMS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apostrophecms/apostrophe-open-graph.git"
+  },
+  "keywords": [
+    "ApostropheCMS",
+    "Open",
+    "Graph"
+  ],
+  "author": "P'unk Ave",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apostrophecms/apostrophe-open-graph/issues"
+  },
+  "homepage": "https://github.com/apostrophecms/apostrophe-open-graph#readme",
+  "devDependencies": {
+    "eslint": "^4.2.0",
+    "eslint-config-punkave": "^1.0.8",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
