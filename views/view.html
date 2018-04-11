@@ -2,6 +2,8 @@
   {% set openGraphUrl = data.piece._url %}
   {% if data.piece.openGraphTitle %}
     {% set openGraphTitle = data.piece.openGraphTitle %}
+  {% else %}
+    {% set openGraphTitle = data.piece.title %}
   {% endif %}
   {% if data.piece.openGraphDescription %}
     {% set openGraphDescription = data.piece.openGraphDescription %}
@@ -19,6 +21,8 @@
   {% set openGraphUrl = data.page._url %}
   {% if data.page.openGraphTitle %}
     {% set openGraphTitle = data.page.openGraphTitle %}
+  {% else %}
+    {% set openGraphTitle = data.page.title %}
   {% endif %}
   {% if data.page.openGraphDescription %}
     {% set openGraphDescription = data.page.openGraphDescription %}
