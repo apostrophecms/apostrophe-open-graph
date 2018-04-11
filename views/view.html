@@ -37,8 +37,10 @@
     {% endif %}
   {% endif %}
 {% endif %}
-<meta property="og:url" content="{{ openGraphUrl }}" />
+
+{% set baseUrl = data.baseUrl %}
+<meta property="og:url" content="{{ baseUrql }}{{ openGraphUrl }}" />
 <meta property="og:type" content="{{ openGraphType }}" />
 <meta property="og:title" content="{{ openGraphTitle }}" />
 <meta property="og:description" content="{{ openGraphDescription }}" />
-<meta property="og:image" content="{{ openGraphImagePath }}" />
+<meta property="og:image" content="{{ baseUrl }}{{ openGraphImagePath }}" />
