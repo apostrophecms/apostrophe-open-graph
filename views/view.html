@@ -38,7 +38,11 @@
   {% endif %}
 {% endif %}
 <meta property="og:url" content="{{ openGraphUrl }}" />
-<meta property="og:type" content="{{ openGraphType }}" />
+<meta property="og:type" content="{{ openGraphType or 'website' }}" />
 <meta property="og:title" content="{{ openGraphTitle }}" />
-<meta property="og:description" content="{{ openGraphDescription }}" />
-<meta property="og:image" content="{{ openGraphImagePath }}" />
+{% if openGraphDescription %}
+  <meta property="og:description" content="{{ openGraphDescription }}" />
+{% endif %}
+{% if openGraphImagePath %}
+  <meta property="og:image" content="{{ openGraphImagePath }}" />
+{% endif %}
