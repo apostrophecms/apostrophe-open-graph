@@ -21,7 +21,7 @@ const apos = require('apostrophe')({
 });
 ```
 
-If you choose to disable fields for a piece or page you can do so by setting `openGraph: false` on the module. `apostrophe-files`, `apostrophe-global`, `apostrophe-groups`, `apostrophe-images`, `apostrophe-users` have `openGraph: false` configured by default.
+If you choose to disable fields for a piece or page you can do so by setting `openGraph: false` on the module. `apostrophe-files`, `apostrophe-global`, `apostrophe-groups`, `apostrophe-images`, `apostrophe-users`, `apostrophe-redirects` have `openGraph: false` configured by default.
 
 ```js
 module.exports = {
