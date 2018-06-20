@@ -6,8 +6,7 @@ module.exports = {
       'apostrophe-open-graph-global',
       'apostrophe-open-graph-images',
       'apostrophe-open-graph-groups',
-      'apostrophe-open-graph-users',
-      'apostrophe-open-graph-redirects'
+      'apostrophe-open-graph-users'
     ],
     directory: 'lib/modules'
   }
