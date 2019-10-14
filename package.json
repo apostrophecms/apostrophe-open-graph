@@ -1,6 +1,6 @@
 {
   "name": "apostrophe-open-graph",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Facebook's Open Graph for ApostropheCMS",
   "main": "index.js",
   "scripts": {
