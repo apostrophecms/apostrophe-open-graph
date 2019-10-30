@@ -18,7 +18,7 @@
 {% if context.openGraphImage %}
   {% if apos.images.first(context.openGraphImage) %}
     {% set openGraphImageObj = apos.images.first(context.openGraphImage) %}
-    {% set openGraphImagePath = apos.attachments.url(openGraphImageObj, { size: 'full' })  %}
+    {% set openGraphImagePath = apos.attachments.url(openGraphImageObj, { size: 'original' })  %}
   {% endif %}
 {% endif %}
 <meta property="og:url" content="{{ openGraphUrl }}" />
