@@ -21,6 +21,8 @@ const apos = require('apostrophe')({
 });
 ```
 
+**Set the `baseUrl` value.** Open Graph images will not be set with absolute URLs if the `baseUrl` is not set. This should either be [on the core server object](https://docs.apostrophecms.org/reference/core-server.html#options) or, more likely, in environment configuration, [such as in `data/local.js`](https://docs.apostrophecms.org/core-concepts/global-settings/settings.html#hardcoded-settings).
+
 If you choose to disable fields for a piece or page you can do so by setting `openGraph: false` on the module. `apostrophe-files`, `apostrophe-global`, `apostrophe-groups`, `apostrophe-images`, `apostrophe-users` have `openGraph: false` configured by default.
 
 ```js
