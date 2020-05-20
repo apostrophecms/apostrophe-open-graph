@@ -1,10 +1,10 @@
 {
   "name": "apostrophe-open-graph",
-  "version": "1.1.5",
-  "description": "Facebook's Open Graph for ApostropheCMS",
+  "version": "1.1.6",
+  "description": "Open Graph for ApostropheCMS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx eslint ."
   },
   "repository": {
     "type": "git",
@@ -12,10 +12,10 @@
   },
   "keywords": [
     "ApostropheCMS",
-    "Open",
-    "Graph"
+    "open graph",
+    "social sharing"
   ],
-  "author": "P'unk Ave",
+  "author": "Apostrophe Technologies, Inc.",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/apostrophecms/apostrophe-open-graph/issues"

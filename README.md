@@ -1,6 +1,6 @@
 # apostrophe-open-graph
 
-Facebook's Open Graph for [ApostropheCMS](http://apostrophecms.org/).
+[Open Graph](https://ogp.me/) for [ApostropheCMS](https://apostrophecms.com).
 
 ## Installation
 
@@ -34,10 +34,19 @@ module.exports = {
 };
 ```
 
-Add the following include to your `<head></head>` in `layout.html` that all of your pages extend, or to `outerLayout.html` if you have one in `apostrophe-templates/views/`. This will output the meta tags needed for Facebook Open Graph.
+Add the following include to your `<head></head>` in `layout.html` that all of your pages extend, or to `outerLayout.html` if you have one in `apostrophe-templates/views/`. This will output the meta tags needed for Open Graph.
 
 ```nunjucks
 {% block extraHead %}
   {% include "apostrophe-open-graph:view.html" %}
 {% endblock %}
 ```
+
+
+## ChangeLog
+
+### 1.1.6 - 2020-06-03
+- Removes the regression where the site domain would be present twice in the
+`og:image` tag if `baseUrl` is set on the application. There is also a dev
+warning should `baseUrl` not be set.
+- Removes Facebook-specific language, as Open Graph is used more widely.
